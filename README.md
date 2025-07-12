@@ -242,8 +242,3 @@ npm run test
 ```
 
 ---
-
-## 💬 Contact
-
-Built for backend assignment purposes using NestJS.  
-Maintained by [Harsha].
