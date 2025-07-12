@@ -3,19 +3,19 @@ import { Document } from 'mongoose';
 
 export type RedemptionDocument = Redemption & Document;
 
-@Schema({ timestamps: true })
+@Schema({ timestamps: true }) //// ---Enables createdAt and updatedAt timestamps---
 export class Redemption {
   @Prop({ required: true })
-  userId: string;
+  userId: string; /// ----------ID of the user who redeemed points
 
   @Prop({ required: true })
-  rewardType: string;
+  rewardType: string; ////// ----------------Type of reward redeemed
 
   @Prop({ required: true })
-  pointsRedeemed: number;
+  pointsRedeemed: number;       ////////Number of points redeemed
 
   @Prop({ default: Date.now })
-  timestamp: Date;
+  timestamp: Date; //==== When the redemption occurred
 }
 
 export const RedemptionSchema = SchemaFactory.createForClass(Redemption);
