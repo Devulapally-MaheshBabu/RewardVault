@@ -1,11 +1,11 @@
 
-# 🎁 Rewards API (NestJS + MongoDB)
+# Rewards API (NestJS + MongoDB)
 
 A backend API built with **NestJS** and **MongoDB** to manage a user rewards dashboard. It supports reward tracking, redemptions, and transaction history.
 
 ---
 
-## 📌 Project Objective
+## Project Objective
 
 To build a backend service for a rewards platform that:
 - Tracks reward points for users
@@ -15,7 +15,7 @@ To build a backend service for a rewards platform that:
 
 ---
 
-## 🚀 Features
+## Features
 
 - ✅ Reward point management
 - ✅ Reward redemption (cashback, vouchers, giftcards)
@@ -29,7 +29,7 @@ To build a backend service for a rewards platform that:
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 
 ```bash
 src/
@@ -55,15 +55,15 @@ src/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1. 📦 Install Dependencies
+### 1. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. ⚙️ Start MongoDB (Locally)
+### 2. Start MongoDB (Locally)
 
 Make sure MongoDB is running. Example URI:
 
@@ -71,7 +71,7 @@ Make sure MongoDB is running. Example URI:
 mongodb://localhost:27017/rewardsdb
 ```
 
-### 3. 🚀 Start the Server
+### 3. Start the Server
 
 ```bash
 npm run start
@@ -83,7 +83,7 @@ NestJS app will start on:
 http://localhost:3000
 ```
 
-### 4. 📑 Access Swagger Documentation
+### 4. Access Swagger Documentation
 
 Go to:
 
@@ -93,11 +93,11 @@ http://localhost:3000/swagger
 
 ---
 
-## 🧪 Example API Requests & Responses
+## Example API Requests & Responses
 
 ---
 
-### 1. ✅ Get Total Reward Points
+### 1. Get Total Reward Points
 
 **Request**
 ```http
@@ -114,7 +114,7 @@ GET /rewards/points?userId=66cd8fcde9a7468f2ab7cfd1
 
 ---
 
-### 2. ✅ Get Reward Options
+### 2. Get Reward Options
 
 **Request**
 ```http
@@ -139,7 +139,7 @@ GET /rewards/options
 
 ---
 
-### 3. ✅ Redeem Points
+### 3. Redeem Points
 
 **Request**
 ```http
@@ -169,7 +169,7 @@ Content-Type: application/json
 
 ---
 
-### 4. ✅ Get Last 5 Transactions (Paginated)
+### 4. Get Last 5 Transactions (Paginated)
 
 **Request**
 ```http
@@ -191,16 +191,16 @@ GET /rewards/transactions?userId=66cd8fcde9a7468f2ab7cfd1&page=1&limit=5
 
 ---
 
-## 🧠 Key Considerations
+## Key Considerations
 
-- 🔐 **No authentication** is used. Instead, `userId` is passed directly in API requests.
-- 🧪 Data validation using `class-validator`.
-- ⚠️ If a user does not exist or has insufficient points, the API returns a 404 or 400 error.
-- 🧾 Use MongoDB Compass to insert test data into collections: `rewards`, `transactions`, `redemptions`, `rewardoptions`.
+- **No authentication** is used. Instead, `userId` is passed directly in API requests.
+-  Data validation using `class-validator`.
+-  If a user does not exist or has insufficient points, the API returns a 404 or 400 error.
+-  Use MongoDB Compass to insert test data into collections: `rewards`, `transactions`, `redemptions`, `rewardoptions`.
 
 ---
 
-## ➕ Bonus Feature Ideas
+## Bonus Feature Ideas
 
 - `GET /analytics/rewards-distribution`: breakdown by rewardType
 - WebSocket support to push live updates on point balances
@@ -209,9 +209,9 @@ GET /rewards/transactions?userId=66cd8fcde9a7468f2ab7cfd1&page=1&limit=5
 
 ---
 
-## 📦 Example Data to Seed in MongoDB
+## Example Data to Seed in MongoDB
 
-### ➕ rewardoptions collection
+### rewardoptions collection
 
 ```json
 [
@@ -235,7 +235,7 @@ GET /rewards/transactions?userId=66cd8fcde9a7468f2ab7cfd1&page=1&limit=5
 
 ---
 
-## ✅ Testing (optional)
+## Testing (optional)
 
 ```bash
 npm run test
