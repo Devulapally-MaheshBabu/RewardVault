@@ -17,15 +17,15 @@ To build a backend service for a rewards platform that:
 
 ## Features
 
-- ✅ Reward point management
-- ✅ Reward redemption (cashback, vouchers, giftcards)
-- ✅ View last 5 reward transactions (with pagination)
-- ✅ Reward options endpoint
-- ✅ Swagger API documentation
-- ✅ Class-validator-based data validation
-- ✅ Standard error handling
-- ✅ Mock user system using `userId` in API
-- ✅ Mongoose schemas for MongoDB
+-  Reward point management
+-  Reward redemption (cashback, vouchers, giftcards)
+-  View last 5 reward transactions (with pagination)
+-  Reward options endpoint
+-  Swagger API documentation
+-  Class-validator-based data validation
+-  Standard error handling
+-  Mock user system using `userId` in API
+-  Mongoose schemas for MongoDB
 
 ---
 
